@@ -15,23 +15,45 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-dark navbar-expand bg-dark text-light no-select">
-      <a class="navbar-brand ms-3" href="#">
+    <nav class="d-flex navbar navbar-dark navbar-expand bg-dark text-light no-select">
+      <a class="navbar-brand mx-3 px-3" href="#">
         <img src="https://codeworks.blob.core.windows.net/public/assets/img/cw-mark.png" height="45" alt=""
           loading="lazy">
         <span class="ms-2">week3day2vendingMachine</span>
       </a>
+      <h1 class="mx-3 px-3">Luke's Vending Machine
+      </h1>
     </nav>
   </header>
+
   <main>
     <div class="container-fluid">
-      <div class="row">
+      <div class="d-flex row">
+        <div class="col-md-6 d-flex justify-content-end">
+          <button onclick="addMoniez(1)" class="bg-success btn-lg">Insert 1$
+          </button>
+        </div>
+        <div class="col-md-6">
+          <button onclick="addMoniez(0.25)" class="bg-success btn-lg">Insert Quarter</button>
+        </div>
         <div class="col-12">
-          <div id="app"></div>
+          <div id="app">
+            <!-- <div class="col-md-3">
+              <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title">Product</h4>
+                  <h4 class="card-title">Moniez Needed:</h4>
+                  <button onclick="purchase()" class="btn-success">Purchase</button>
+                </div>
+              </div>
+            </div>   -->
+          </div>
         </div>
       </div>
     </div>
   </main>
+
   <footer class="bg-dark text-light">
     <div class="text-center no-select">
       <p><small>Made with 💖 by Codeworks</small></p>
